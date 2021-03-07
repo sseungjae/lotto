@@ -46,7 +46,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="340dp"
-            android:background="@drawable/lottery_ball"/>
+            android:background="@drawable/lottery_ball2"/>
         <TextView
             android:id="@+id/number3"
             android:layout_width="50dp"
@@ -59,7 +59,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="340dp"
-            android:background="@drawable/lottery_ball"/>
+            android:background="@drawable/lottery_ball3"/>
         <TextView
             android:id="@+id/number4"
             android:layout_width="50dp"
@@ -72,7 +72,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="340dp"
-            android:background="@drawable/lottery_ball"/>
+            android:background="@drawable/lottery_ball4"/>
         <TextView
             android:id="@+id/number5"
             android:layout_width="50dp"
@@ -85,7 +85,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="340dp"
-            android:background="@drawable/lottery_ball"/>
+            android:background="@drawable/lottery_ball5"/>
         <TextView
             android:id="@+id/number6"
             android:layout_width="50dp"
@@ -98,13 +98,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="340dp"
-            android:background="@drawable/lottery_ball"/>
+            android:background="@drawable/lottery_ball6"/>
     </LinearLayout>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_btn"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
         app:lottie_rawRes="@raw/lottery_whirl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

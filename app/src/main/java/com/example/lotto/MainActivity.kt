@@ -11,22 +11,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val lotteryNumbers = arrayListOf(number1, number2, number3, number4, number5, number6)
-        
-        val countDownTimer = object : CountDownTimer(3000, 100){
-            override fun onFinish() {
-
-            }
-
-            override fun onTick(millisUntilFinished: Long) {
-                lotteryNumbers.forEach {
-                    val randomNumber = (Math.random() * 45 + 1).toInt()
-                    it.text = "$randomNumber"
+        val countDownTimer = object : CountDownTimer(3000, 100) {
+            override fun onTick(p0: Long) {
+                val lotteryList = arrayListOf(number1, number2, number3, number4, number5, number6)
+                val numberArray = IntArray(6)
+                lotteryList.forEachIndexed {index, textView ->
+                    while (true) {
+                        val randomNumber = (Math.random() * 45 + 1).toInt()
+                        if (!numberArray.contains(randomNumber)) {
+                            numberArray[index] = randomNumber
+                            break;
+                        }
+                    }
+                    textView.text = "${numberArray[index]}"
                 }
             }
 
+            override fun onFinish() {
+            }
         }
-        
+
         lottie_btn.setOnClickListener {
             if (lottie_btn.isAnimating){
                 lottie_btn.cancelAnimation()
@@ -35,8 +39,6 @@ class MainActivity : AppCompatActivity() {
                 lottie_btn.playAnimation()
                 countDownTimer.start()
             }
-            lottie_btn.playAnimation()
-            countDownTimer.start()
         }
     }
 }

@@ -9,4 +9,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ballStroke">#3145B6</color>
     <color name="ballSolid">#03A9F4</color>
+    <color name="ballStroke2">#63142F</color>
+    <color name="ballSolid2">#DD5D54</color>
+    <color name="ballStroke3">#244526</color>
+    <color name="ballSolid3">#61D566</color>
+    <color name="ballStroke4">#DAD07A</color>
+    <color name="ballSolid4">#FFEB3C</color>
+    <color name="ballStroke5">#611A15</color>
+    <color name="ballSolid5">#E65325</color>
+    <color name="ballStroke6">#07A899</color>
+    <color name="ballSolid6">#00BCD4</color>
 </resources>
